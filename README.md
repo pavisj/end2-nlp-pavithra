@@ -35,3 +35,5 @@ Chain rule helps in propagating the loss value from one layer to another such th
 ![image](./images/propagation.png)
 ![image](./images/propagation-gif.gif)
 ![image](./images/propagation-2.png)
+
+Source: https://medium.com/@pavisj/convolutions-and-backpropagations-46026a8f5d2c
