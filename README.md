@@ -16,13 +16,13 @@ In gradient descent, the learning rate handles magnitude with which a weight cha
 
 ##### How are weights initialized?
 
-Weights are initialized based on Gaussian or normal distribution with zero-mean and a calculated variance. The intuition behind the generalization of a NN is about learning from the input distribution. The weights should follow a normal distribution (or something similar) such that as it learns during the training it is able to converge better and 'mimick' the outcome of the input distribution. 
+Weights are initialized based on Gaussian or normal distribution with zero-mean and a calculated variance. The intuition behind the generalization of a NN is about learning from the input distribution. The weights should follow a normal distribution (or something similar) such that as it learns during the training it is able to converge better. 
 
 Using weights as constant values hinders convergence mainly because of vanishing/exploding gradients. It is not primed to learn from the input distribution and generalize.
 
 ##### What is "loss" in a neural network?
 
-The difference between the NN output and the ground truth output. The loss function determines the learning (training) outcome in a NN. A loss function shows the NN the gaps that it needs to fill/learn, such that it is able to perform a particular task as indicated by the Ground Truth.
+The difference between the NN output and the ground truth output. The loss function determines the learning (training) outcome in a NN. A loss function shows the NN the gaps that it needs to fill/learn, such that it is able to perform a particular task.
 
 ##### What is the "chain rule" in gradient flow?
 
