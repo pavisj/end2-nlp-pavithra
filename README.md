@@ -1,6 +1,6 @@
 # end2-nlp-pavithra
 
-
+### Session 1 - Basics
 ##### What is a neural network neuron?
 
 A DNN or Neural network neuron is a storage unit that stores a number or a "signal". Our neurons in our brain in addition to having a storage unit, also have their own computation unit. A neural network neuron has the computation unit outside it along with a weight (a number) for each neuron. A NN neuron stores the result of the computation of its input based on the weight and the activation function
@@ -39,6 +39,55 @@ Chain rule helps in propagating the loss value from one layer to another such th
 Source: https://medium.com/@pavisj/convolutions-and-backpropagations-46026a8f5d2c
 
 ### Session 2
-#### Excelling in Backpropagations in Excel
+#### Excelling in Backpropagations in Excel 
+*(contextualized pun intended)*
+
+Here is a Neural network trained in Excel (or in my case MacOS Numbers) with a learning rate of 0.5
 
 ![image](./images/the-complete-picture-learning-rate-0-5.png)
+
+Read on to know how this was done. The excel sheet also have been attached to this: https://github.com/pavisj/end2-nlp-pavithra/blob/main/session2-backpropagation.xlsx
+
+**Step 1:**
+Create the Neural network with the 8 weights - w1 to w8. It takes two inputs i1 and i2 and gives two outputs o1 and o2. L2 loss is used for defining the loss.
+
+![image](./images/backprop-1.png)
+
+**Step 2**
+Write the formulae for the forward pass of the Neural network
+
+![image](./images/backprop-2.png)
+
+**Step 3**
+Write all the input and output variables
+
+![image](./images/backprop-3.png)
+
+
+![image](./images/backprop-4.png)
+
+![image](./images/backprop-6.png)
+
+![image](./images/backprop-7.png)
+
+![image](./images/backprop-8.png)
+
+![image](./images/backprop-10.png)
+
+![image](./images/backprop-11.png)
+
+![image](./images/backprop-12.png)
+
+![image](./images/backprop-13.png)
+
+![image](./images/backprop-15.png)
+
+![image](./images/learning_rate_0_1.png)
+![image](./images/learning_rate_0_2.png)
+![image](./images/learning_rate_0_5.png)
+![image](./images/learning_rate_0_8.png)
+![image](./images/learning_rate_1_0.png)
+![image](./images/learning_rate_2_0.png)
+
+
+
