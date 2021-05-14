@@ -37,3 +37,8 @@ Chain rule helps in propagating the loss value from one layer to another such th
 ![image](./images/propagation-2.png)
 
 Source: https://medium.com/@pavisj/convolutions-and-backpropagations-46026a8f5d2c
+
+### Session 2
+#### Excelling in Backpropagations in Excel
+
+![image](./images/the-complete-picture-learning-rate-0-5.png)
