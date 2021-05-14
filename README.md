@@ -27,8 +27,13 @@ The difference between the NN output and the ground truth output. The loss funct
 ##### What is the "chain rule" in gradient flow?
 
 Chain rule helps in find the partial derivative of a function A  with respect to another function B, by using a function C
+
 ![Image](./images/chain-rule-1.png)
+
 Chain rule helps in propagating the loss value from one layer to another such that a given NN's weight is changed wrto to the loss value
+
 ![image](./images/propagation.png)
 ![image](./images/propagation-gif.gif)
 ![image](./images/propagation-2.png)
+
+Source: https://medium.com/@pavisj/convolutions-and-backpropagations-46026a8f5d2c
