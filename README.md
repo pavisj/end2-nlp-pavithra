@@ -42,7 +42,7 @@ Source: https://medium.com/@pavisj/convolutions-and-backpropagations-46026a8f5d2
 #### Excelling in Backpropagations in Excel 
 *(contextualized pun intended)*
 
-We will be "training" a neural network in Excel, as an exercise for understanding Backpropagation.
+We will be "training" a neural network in Excel, as an exercise for understanding Backpropagation. Here is the complete picture of a NN trained for 45 epochs with a Learning rate of 0.5
 
 ![image](./images/the-complete-picture-learning-rate-0-5.png)
 
