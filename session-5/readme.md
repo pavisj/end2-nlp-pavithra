@@ -3,6 +3,8 @@
 ## Objective: 
 We will be using SST-5 Dataset (from this http://nlp.stanford.edu/~socherr/stanfordSentimentTreebank.zip) to perform Sentiment Analysis across 5 labels (Very Negative, Negative, Neutral, Positive, Very Positive) for movie reviews from Rotten Tomatoes. This dataset was curated by Stanford and using mTurks it was annotated at a phrase level i.e. Each sentence is represented as a Parse-Tree breaking it down into phrases. Each phrase was then shown to an annotator who gace it a score fro m 0 to 25, using a slider. This was later normalized to 0 to 1.
 
+*Please note that I have used PyTreeBank for getting the labels associated with the Sentences from Phrases. For Session 7 Assignment, I will be changing this to my own preprocessing functions.*
+
 **This is an hands-on exercise to familiarize ourselves wth Data Augmentation techniques for Text in PyTorch**
 
 ## Data Augmentation
