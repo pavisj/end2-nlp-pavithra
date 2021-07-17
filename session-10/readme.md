@@ -16,10 +16,10 @@ This is done in the following way:
 
 1. Defining the Lang Classes
 
-	Two langauge classes are used one for input langauge and another one for a output langauge. 
-	Input langauge class is used to process the source langauge i.e English in our case and takes number of words from Glove embbedings
-	Output langauge class is used to process the target langauge i.e French in our case and takes number of words from raw data 
-	Note that, for output langauge we can not use Glove embbedings as it does't support French langauge
+	Two language classes are used one for input language and another one for a output language. 
+	Input language class is used to process the source language i.e English in our case and takes number of words from Glove embbedings
+	Output language class is used to process the target language i.e French in our case and takes number of words from raw data 
+	Note that, for output language we can not use Glove embbedings as it does't support French language
 
 	```
 	class InputLang:
@@ -41,8 +41,7 @@ This is done in the following way:
 			else:
 				self.word2count[word] += 1
 	```
-	In the above class addSentence function splits the sentence into words based on space 
-	The addWord function keeps track of adding a new words, each words index and number of times a same word is repeated
+	In the above class addSentence function splits the sentence into words based on space. The addWord function keeps track of adding a new words, each words index and number of times a same word is repeated
 
 	 
 	```
@@ -89,7 +88,7 @@ This is done in the following way:
 	```
 UnicodeToAscii function helps to convert unicode characters ASCII format and normalizeString function cleans the text by removing special characters
 
-3. Extracting input and output langauge pairs from raw text 
+3. Extracting input and output language pairs from raw text 
 
 ```
 	def readLangs(lang1, lang2, reverse=False):
@@ -115,8 +114,8 @@ UnicodeToAscii function helps to convert unicode characters ASCII format and nor
 
 		return input_lang, output_lang, pairs
 ```
-The readLangs function takes source and target langauge as inputs and returns the input and output langauge pairs.
-reverse argument is set to true when machine translation has to be performed from French to English
+
+The readLangs function takes source and target language as inputs and returns the input and output language pairs. ***reverse*** argument is set to true when machine translation has to be performed from French to English
 
 4. Trimming the sentences based on filtering the length and content
 
@@ -171,7 +170,7 @@ reverse argument is set to true when machine translation has to be performed fro
 	print(random.choice(pairs))
 ```
 
-The prepareData function brings all the previous functions in place and returns input, output langauge pairs
+The prepareData function brings all the previous functions in place and returns input, output language pairs
 
 ### Using GLoVe Embedding ###
 
@@ -243,7 +242,7 @@ A few notes about Teacher Forcing which we have used in our model:
 Reference:-
 https://machinelearningmastery.com/teacher-forcing-for-recurrent-neural-networks/
 
-###  Training the Model ###
+###  Model Traininga and Comparison ###
 
 Since we are using a higher dimension of 300, we have also used a dropout of 0.3 in the Attention Decoder. The learning rate after some experimentation was set at 0.01 since higher LRs tend to increase loss. We also tried Adam vs SGD and saw SGD gave better convergence
 
