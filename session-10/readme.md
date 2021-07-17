@@ -192,6 +192,8 @@ vectors.append(vect)
 
 In the above code snippet we assign a number to each word which is stored in a dictionary **word2index** and we store the corresponding vector of the word in the **vectors** list
 
+<sos> and <eos> tokens will have 0 and 1 index and we swap the words at these locations to incorporate the sos and eos tokens
+
 We also create a dictionary to store each word and its vector as a key-value pair
 
 ```
