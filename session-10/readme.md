@@ -261,9 +261,11 @@ To compare this with a model without GloVe embedding we have trained a model for
 
 ![image](assets/without-glove-training.png)
 
-**We tried training with different dimension of GloVe embeddings but it did not show any improvement for a model without GLoVe embedding**
+**We tried training with different dimension of GloVe embeddings but it did not show any improvement against a model without GLoVe embedding**
 
-It was quite interesting to note that GloVe embeddings when used in our previous exercises like SST dataset for sentiment classification seemed to perform well but not in the case for translation tasks. 
+Model without GloVe embedding's loss was at 0.9450 at 75k iterations whereas Model using GloVe Embedding's loss was at 1.18 at 75k iterations
+
+It was quite interesting to note that GloVe embeddings when used in our previous exercises like SST dataset for sentiment classification seemed to perform well but not in this case of a  translation task. 
 
 Our hypothesis is that this could be because: Though we use pretrained embeddings, they are not contextualized embeddings or the attention mechanism does not lend itself to train the embeddings to be more contextualized for a given pair of sentences
 
